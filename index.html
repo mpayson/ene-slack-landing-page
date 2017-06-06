@@ -14,11 +14,9 @@
         margin: 0;
         padding: 0px 0 0 0;
       }
-
       #mapCanvas {
         padding:0;
       }
-
       #credit {
         position: absolute;
         bottom: 10px;
@@ -26,11 +24,9 @@
         color: #fff;
         font-size: 14px;
       }
-
       #credit a {
         color: #08c;
       }
-
       #center {
         position:absolute; 
         height: 50px; 
@@ -43,31 +39,26 @@
         margin-right: auto; 
         z-index: 10;
       }
-
       #button {
         height: 50px;
         width: 150px;
       }
-
       #title-container{
         position: absolute;
         padding: 50px;
       }
-
       #title{
         font-size: 5.65258rem;
         line-height: 3.875rem;
         line-height: 1.15em;
         margin: 0px;
       }
-
     </style>
 
     <script>
       var dojoConfig = {
         paths: {
-//           plugins: location.pathname.replace(/\/[^/]+$/, "") + "/plugins"
-          plugins: "/plugins"
+          plugins: location.pathname.replace(/\/[^/]+$/, "") + "/plugins"
         }
       };
     </script>
@@ -103,8 +94,7 @@
         map.on("load", mapLoaded);
 
         function mapLoaded() {
-          map.disableMapNavigation();
-          map.hideZoomSlider();
+
           // Add raster layer
           if ( canvasSupport ) {
             rasterLayer = new RasterLayer(null, {
@@ -162,17 +152,16 @@
   </head>
 
   <body class="">
-    <div id="mapCanvas" style="height:100%;">
-    </div>
-    <div id="title-container">
-      <h1 id="title" class="text-white avenir-bold">e-bloc</h1>
-      <h4 class="text-white avenir-demi">// (n) - A community for new Esri employees <br> to connect, to collaborate, and to grow.</h4>
-    </div>
-    <div id="center">
-      <a href="http://e-bloc.slack.com"><button id="button" class="btn btn-clear-white btn-large avenir-bold font-size-2">Join Us!</button></a>
-    </div>
-    <div id="credit">Inspired by <a href="https://github.com/cambecc/earth">Earth</a>, data from <a href="http://nomads.ncdc.noaa.gov/data.php?name=access#hires_weather_datasets">GFS</a>, open source on <a href="https://github.com/Esri/wind-js">Github</a></div>
-    <script src="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-rc.4/js/calcite-web.min.js"></script>
+     <div id="mapCanvas" style="height:100%;">
+     </div>
+      <div id="title-container">
+        <h1 id="title" class="text-white avenir-bold">e-bloc</h1>
+        <h4 class="text-white avenir-demi">// (n) - A community for new Esri employees <br> to connect, to collaborate, and to grow.</h4>
+      </div>
+      <div id="center">
+        <a href="http://e-bloc.slack.com"><button id="button" class="btn btn-clear-white btn-large avenir-bold font-size-2">Join Us!</button></a>
+      </div>
+     <div id="credit">Inspired by <a href="https://github.com/cambecc/earth">Earth</a>, data from <a href="http://nomads.ncdc.noaa.gov/data.php?name=access#hires_weather_datasets">GFS</a>, open source on <a href="https://github.com/Esri/wind-js">Github</a></div>
   </body>
 
 </html>
