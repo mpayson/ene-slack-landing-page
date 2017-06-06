@@ -94,7 +94,8 @@
         map.on("load", mapLoaded);
 
         function mapLoaded() {
-
+          map.disableMapNavigation();
+          map.hideZoomSlider();
           // Add raster layer
           if ( canvasSupport ) {
             rasterLayer = new RasterLayer(null, {
