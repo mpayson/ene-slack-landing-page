@@ -1,11 +1,6 @@
-# Wind-JS
+# Slack Landing Page
 
-Check out the live [demo](http://esri.github.io/wind-js/)
-
-![Wind JS](https://f.cloud.github.com/assets/351164/2349895/36ba1c9a-a569-11e3-859d-5d753ea0898c.jpeg)
-
-
-This project is an experiment in client-side data processing and visualization. Most of the code in this project is taken from https://github.com/cambecc/earth and has been re-purposed to support easier application to a variety of mapping APIs and Frameworks.
+This is an adaption of the awesome wind-js visualizations (https://github.com/Esri/wind-js) to create a landing page for the esri new employee community. Read-me information from the original repo is copied below.
 
 ## How it works
 
@@ -26,10 +21,6 @@ Before [GFS data](http://nomads.ncdc.noaa.gov/data.php?name=access#hires_weather
 ## Issues
 
 Find a bug or want to request a new feature?  Please let us know by submitting an issue.
-
-## Contributing
-
-Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing).
 
 ## Credit
 
